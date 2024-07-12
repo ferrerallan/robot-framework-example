@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.10.12 on linux)" generated="2024-07-12T18:10:28.431178" rpa="false" schemaversion="5">
+<suite id="s1" name="Login Test" source="/media/afd/linux-hd/gitallan/robot-framework-example/login_test.robot">
+<test id="s1-t1" name="Validar Login" line="10">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-07-12T18:10:28.520755" level="INFO">Opening browser 'chrome' to base url 'http://the-internet.herokuapp.com/login'.</msg>
+<arg>${LOGIN_URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-07-12T18:10:28.520536" elapsed="2.436386"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-12T18:10:30.957610" level="INFO">Typing text 'tomsmith' into text field 'id=username'.</msg>
+<arg>id=username</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-12T18:10:30.957211" elapsed="0.057109"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-12T18:10:31.014845" level="INFO">Typing text 'SuperSecretPassword!' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-12T18:10:31.014574" elapsed="0.045135"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-07-12T18:10:31.060197" level="INFO">Clicking button 'xpath=//*[@id="login"]/button'.</msg>
+<arg>xpath=//*[@id="login"]/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-12T18:10:31.059973" elapsed="0.354749"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>You logged into a secure area!</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-07-12T18:10:31.415019" elapsed="0.008554"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-07-12T18:10:31.423847" elapsed="0.062431"/>
+</kw>
+<status status="PASS" start="2024-07-12T18:10:28.519879" elapsed="2.966650"/>
+</test>
+<status status="PASS" start="2024-07-12T18:10:28.432163" elapsed="3.054730"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Login Test">Login Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

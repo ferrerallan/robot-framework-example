@@ -1,47 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0.1 (Python 3.10.12 on linux)" generated="2024-07-12T18:10:28.431178" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0.1 (Python 3.10.12 on linux)" generated="2024-07-15T15:25:43.300821" rpa="false" schemaversion="5">
 <suite id="s1" name="Login Test" source="/media/afd/linux-hd/gitallan/robot-framework-example/login_test.robot">
 <test id="s1-t1" name="Validar Login" line="10">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-07-12T18:10:28.520755" level="INFO">Opening browser 'chrome' to base url 'http://the-internet.herokuapp.com/login'.</msg>
+<msg time="2024-07-15T15:25:43.400369" level="INFO">Opening browser 'chrome' to base url 'http://the-internet.herokuapp.com/login'.</msg>
 <arg>${LOGIN_URL}</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-07-12T18:10:28.520536" elapsed="2.436386"/>
+<status status="PASS" start="2024-07-15T15:25:43.400118" elapsed="2.485691"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-07-12T18:10:30.957610" level="INFO">Typing text 'tomsmith' into text field 'id=username'.</msg>
+<msg time="2024-07-15T15:25:45.886489" level="INFO">Typing text 'tomsmith' into text field 'id=username'.</msg>
 <arg>id=username</arg>
 <arg>${USERNAME}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-12T18:10:30.957211" elapsed="0.057109"/>
+<status status="PASS" start="2024-07-15T15:25:45.886100" elapsed="0.073007"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-07-12T18:10:31.014845" level="INFO">Typing text 'SuperSecretPassword!' into text field 'id=password'.</msg>
+<msg time="2024-07-15T15:25:45.959672" level="INFO">Typing text 'SuperSecretPassword!' into text field 'id=password'.</msg>
 <arg>id=password</arg>
 <arg>${PASSWORD}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-12T18:10:31.014574" elapsed="0.045135"/>
+<status status="PASS" start="2024-07-15T15:25:45.959394" elapsed="0.054879"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-07-12T18:10:31.060197" level="INFO">Clicking button 'xpath=//*[@id="login"]/button'.</msg>
+<msg time="2024-07-15T15:25:46.014846" level="INFO">Clicking button 'xpath=//*[@id="login"]/button'.</msg>
 <arg>xpath=//*[@id="login"]/button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-12T18:10:31.059973" elapsed="0.354749"/>
+<status status="PASS" start="2024-07-15T15:25:46.014591" elapsed="0.372568"/>
 </kw>
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>You logged into a secure area!</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2024-07-12T18:10:31.415019" elapsed="0.008554"/>
+<status status="PASS" start="2024-07-15T15:25:46.387716" elapsed="0.010467"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-15T15:25:56.399177" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-15T15:25:46.398631" elapsed="10.000689"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-07-12T18:10:31.423847" elapsed="0.062431"/>
+<status status="PASS" start="2024-07-15T15:25:56.399603" elapsed="0.119034"/>
 </kw>
-<status status="PASS" start="2024-07-12T18:10:28.519879" elapsed="2.966650"/>
+<status status="PASS" start="2024-07-15T15:25:43.399408" elapsed="13.119847"/>
 </test>
-<status status="PASS" start="2024-07-12T18:10:28.432163" elapsed="3.054730"/>
+<status status="PASS" start="2024-07-15T15:25:43.301788" elapsed="13.218400"/>
 </suite>
 <statistics>
 <total>
